@@ -11,12 +11,14 @@ Car.prototype.getPrice = function() { return this.price };
 Car.prototype.setEngineType = function(engineType) { this.engineType = engineType};
 Car.prototype.getEngineType = function() { return this.engineType };
 
-const Audi = new Car('Audi', 4000, 'Electric');
+const car1 = new Car('Audi', 10000, 'Electric');
+const car2 = new Car('Ford', 3000, 'Hybrid');
 
-const Dealership = function() {
+const Dealership = function(name, capacity, stock) {
 this.name = name;
 this.capacity = capacity;
-this.stock = [];
+this.stock = []; 
+}
 
 Dealership.prototype.getName = function() { return this.name};
 Dealership.prototype.setName = function(name) { this.name = this.name };
@@ -28,13 +30,14 @@ Dealership.prototype.getStock = function() { return this.stock};
 Dealership.prototype.setStock = function(stock) { this.stock = this.stock};
 
 Dealership.prototype.addCar = function (newCar) {
-    this.Car = newCar;
+    this.car = newCar;
     return stock.push(Car)};
 
 Dealership.prototype.countStock = function() {
     return stock.length};
 
-this.getCourses = () => _courses;
-}
+ Dealership.prototype.CarManufacturer= function() {
+        return Car.map (({manufacturer})) => manufacturer};
 
+const CarManufacturer
 const stock = ['Aldi', 'BMW', 'Ford'];
