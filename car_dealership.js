@@ -11,10 +11,19 @@ Car.prototype.getPrice = function() { return this.price };
 Car.prototype.setEngineType = function(engineType) { this.engineType = engineType};
 Car.prototype.getEngineType = function() { return this.engineType };
 
-const car1 = new Car('Aldi', 4000, 'Petrol');
+const Audi = new Car('Audi', 4000, 'Electric');
 
 const Dealership = function() {
-    let _manufacturer = _manufacturer;
-    let _price = _price;
-    let _engineType = _engineType;
+this.name = name;
+this.capacity = capacity;
+this.stock = [];
+
+Dealership.prototype.getName = function() { return this.name};
+Dealership.prototype.setName = function(manufacturer) { this.name = this.name };
+
+Dealership.prototype.addCar = function () { return stock.push(Car)};
+Dealership.prototype.countStock = function() {return stock.length};
+this.getCourses = () => _courses;
 }
+
+const stock = ['Aldi', 'BMW', 'Ford'];
