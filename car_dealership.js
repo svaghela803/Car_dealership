@@ -13,8 +13,9 @@ Car.prototype.getEngineType = function() { return this.engineType };
 
 const car1 = new Car('Audi', 10000, 'Electric');
 const car2 = new Car('Ford', 3000, 'Hybrid');
+const car3 = new Car('Audi', 24000, 'Electric')
 
-const Dealership = function(name, capacity, stock) {
+const Dealership = function(name, capacity) {
 this.name = name;
 this.capacity = capacity;
 this.stock = []; 
@@ -38,6 +39,9 @@ Dealership.prototype.countStock = function() {
 
  Dealership.prototype.CarManufacturer= function() {
         return Car.map (({manufacturer})) => manufacturer};
+
+        Dealership.prototype.getCarManufacturerName= function() {
+            return Car.filter (car => manufacturer('Audi'))};
 
 const CarManufacturer
 const stock = ['Aldi', 'BMW', 'Ford'];
