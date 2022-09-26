@@ -24,7 +24,13 @@ const Dealership = function(name, maxNumberOfCars) {
             this.cars.push(car)
         }
     }
-    //returns cars with a given manufacturer
+    //returns each car's manufacturer
     Dealership.prototype.carsWithManufacturer = function(){
         return this.cars.map( (car) => car.manufacture)
+    }
+
+    //returns total value of cars
+
+    Dealership.prototype.total = function(){
+        return this.cars.map(car => car.price).reduce((total, price) => total + price)
     }
