@@ -13,5 +13,14 @@ const Dealership = function(name, maxNumberOfCars) {
     Dealership.prototype.getCars = function() { return this.cars};
     Dealership.prototype.setCars = function(cars) { this.cars = this.cars};
 
+    //Counting all cars
     Dealership.prototype.count = function() {
         return this.cars.length};
+
+    //Adding a new car
+    Dealership.prototype.add = function (car){
+        //check if current count of cars is less than the maxNumberofCars
+        if(this.count() < this.maxNumberOfCars) {
+            this.cars.push(car)
+        }
+    }
