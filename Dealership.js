@@ -24,3 +24,7 @@ const Dealership = function(name, maxNumberOfCars) {
             this.cars.push(car)
         }
     }
+    //returns cars with a given manufacturer
+    Dealership.prototype.carsWithManufacturer = function(){
+        return this.cars.map( (car) => car.manufacture)
+    }
