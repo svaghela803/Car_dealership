@@ -1,14 +1,17 @@
-const Dealership = function(name, capacity) {
+const Dealership = function(name, maxNumberOfCars) {
     this.name = name;
-    this.capacity = capacity;
-    this.stock = []; 
+    this.maxNumberOfCars = maxNumberOfCars;
+    this.cars = []; 
     }
     
     Dealership.prototype.getName = function() { return this.name};
     Dealership.prototype.setName = function(name) { this.name = this.name };
-    Dealership.prototype.getCapacity = function() { return this.capacity};
-    Dealership.prototype.setCapacity = function(capacity) { this.capacity = this.capacity };
+    Dealership.prototype.getMaxNumberOfCars = function() { return this.capacity};
+    Dealership.prototype.setMaxNumberOfCars = function(maxNumberOfCars) { this.maxNumberOfCars = this.maxNumberOfCars };
     Dealership.prototype.getName = function() { return this.name};
     Dealership.prototype.setName = function(name) { this.name = this.name };
-    Dealership.prototype.getStock = function() { return this.stock};
-    Dealership.prototype.setStock = function(stock) { this.stock = this.stock};
+    Dealership.prototype.getCars = function() { return this.cars};
+    Dealership.prototype.setCars = function(cars) { this.cars = this.cars};
+
+    Dealership.prototype.count = function() {
+        return this.cars.length};
