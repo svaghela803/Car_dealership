@@ -30,7 +30,6 @@ const Dealership = function(name, maxNumberOfCars) {
     }
 
     //returns total value of cars
-
     Dealership.prototype.total = function(){
         return this.cars.map(car => car.price).reduce((total, price) => total + price)
     }
